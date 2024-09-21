@@ -2,11 +2,9 @@
 
 class Home extends Controller
 {
-    public function index()
+    public function index($a = '', $b = '', $c = '')
     {
-        echo "This is it";
+        echo "This is home controller";
+        $this->view('home');
     }
 }
-
-$home = new Home;
-$home->index();

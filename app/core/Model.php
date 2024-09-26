@@ -33,4 +33,5 @@ class Model
     public function update($id, $data, $id_column = 'id') {}
 
     public function delete($id, $id_column = 'id') {}
+    
 }

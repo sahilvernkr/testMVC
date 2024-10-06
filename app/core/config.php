@@ -19,3 +19,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 
     define('ROOT', 'https://www.yourwebsite.com/MVC/public');
 }
+
+define('APP_NAME', 'My website');
+define('APP_DESC', 'Best website on the planet :p');
+
+/** true means show errors */
+define('DEBUG', true);

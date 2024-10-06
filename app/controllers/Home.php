@@ -13,7 +13,7 @@ class Home extends Controller
         $result = $user->where($arr);
         // $result = $user->insert($arr);
         //  $result = $model->delete(3);
-        show($result);
+        // show($result);
         // $model->update(2, ['name' => 'mary', 'age' => 34]);
         echo "This is home controller";
         $this->view('home');

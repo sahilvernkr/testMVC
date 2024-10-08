@@ -172,8 +172,8 @@
       <div>
         <h3 class="float-md-start mb-0">Cover</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-          <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="<?= ROOT ?>">Home</a>
+          <a class="nav-link fw-bold py-1 px-0" href="<?= ROOT ?>/login">Login</a>
           <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
         </nav>
       </div>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * home class
+ * Login class
  */
 class Login
 {

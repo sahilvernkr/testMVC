@@ -26,14 +26,14 @@ trait Model
         $query = trim($query, " && ");
         $query .=  " order by $this->order_column $this->order_type limit $this->limit offset $this->offset";
         $data = array_merge($data, $data_not);
-        echo $query;
+    
         return $this->query($query, $data);
     }
 
     public function findAll()
     {
         $query =  "select * from $this->table order by $this->order_column $this->order_type limit $this->limit offset $this->offset";
-        echo $query;
+       
         return $this->query($query);
     }
 
@@ -53,7 +53,7 @@ trait Model
         $query = trim($query, " && ");
         $query .=  " limit $this->limit offset $this->offset";
         $data = array_merge($data, $data_not);
-        echo $query;
+       
         $result = $this->query($query, $data);
         if ($result)
             return $result[0];
@@ -74,7 +74,7 @@ trait Model
 
         $keys = array_keys($data);
         $query = "insert into $this->table (" . implode(",", $keys) . ") values (:" . implode(",:", $keys) . ")";
-        echo $query;
+        
         $this->query($query, $data);
         return false;
     }
@@ -101,7 +101,7 @@ trait Model
         $query = trim($query, " , ");
         $query .=  " where $id_column = :$id_column";
         $data[$id_column] = $id;
-        echo $query;
+        
         $this->query($query, $data);
         return false;
     }
@@ -110,7 +110,7 @@ trait Model
     {
         $data[$id_column] = $id;
         $query = "delete from $this->table where $id_column = :$id_column";
-        echo $query;
+       
         $this->query($query, $data);
     }
 }
